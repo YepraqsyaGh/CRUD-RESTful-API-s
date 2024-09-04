@@ -1,6 +1,6 @@
 interface Product {
-	id?: string,
-	name?: string,
+	id: string,
+	name: string,
 	description?: string,
 	price?: number,
 	category?: string,
@@ -12,6 +12,11 @@ interface Product {
 	tags?: string[],
 	rating?: number,
 	deleted?: boolean
+	manufacturer: {
+		address: {
+			street: string;
+		}
+	}
 }
 
 export default Product
